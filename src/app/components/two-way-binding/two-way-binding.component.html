@@ -1,0 +1,11 @@
+<br><br><br>
+
+<h2>Two Way Data Binding</h2>
+
+<form>
+    <input [(ngModel)]="nome" type="text" name="name" placeholder="Digite seu nome">
+</form>
+
+<div *ngIf="nome == 'hygor'">
+    <p>O nome digitado foi: {{ nome }}</p>
+</div>

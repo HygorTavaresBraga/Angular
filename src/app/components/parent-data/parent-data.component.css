@@ -1,0 +1,14 @@
+.container{
+    text-align: center;
+    background: grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1, p{
+    color: white;
+}
+
+span{
+    color: rgb(55, 205, 60);
+}

@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    background: #2e2d4d;
+    color: #fff;
+}
+
+.container{
+    width: 50%;
+    text-align: center;
+    background: #095c02;
+    color: #fff;
+    border-radius: 10px;
+}

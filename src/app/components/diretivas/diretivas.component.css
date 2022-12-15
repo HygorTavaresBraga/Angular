@@ -1,0 +1,18 @@
+h1{
+    background: #13050b;
+    color: #ffff;
+}
+
+.underTxt{
+    text-decoration: underline;
+}
+
+.txt{
+    font-size: 20px;
+    font-family:'Arial';
+    color: #005752;
+}
+
+.behindTxt{
+    background: #070707;
+}

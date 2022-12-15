@@ -1,0 +1,52 @@
+<br><br><br>
+
+<h1>Diretivas de Atributos</h1>
+<br>
+<h2>Diretivas Style</h2>
+<p [ngStyle]="{'font-size':'20px','font-family':'Arial','color': color}">Diretiva Style - Ex 01</p>
+<p [ngStyle]="{'font-size':txtSizeS,'font-family':'Arial','color': color}">Diretiva Style - Ex 02</p>
+<p [ngStyle]="{'font-size':txtSizeN + 'px','font-family':'Arial','color': color}">Diretiva Style - Ex 03</p>
+
+<br>
+<h2>Diretivas de Classe</h2>
+<p [ngClass]="underTxt">Diretiva de Classe - Ex 01</p>
+<p [ngClass]="classes">Diretiva de Classe - Ex 02</p>
+<p [ngClass]="classes">Diretiva de Classe - Ex 03</p>
+<br>
+
+<h1>Diretivas Estruturais</h1>
+<br>
+
+<h2>Diretiva Condicional <strong>(*ngIf)</strong></h2>
+
+    <br>
+    <div *ngIf="cursos.length > 0">
+        <h3>Cursos disponíveis:</h3>
+        <p>{{ cursos[0] }}</p>
+        <p>{{ cursos[1] }}</p>
+        <p>{{ cursos[2] }}</p>
+    </div>
+
+    <div *ngIf="cursos.length == 0">
+        <h3>Não há cursos disponíveis no momento.</h3>
+    </div>
+    <br>
+
+    <h3>Saldo:</h3>
+    <button (click)="mostrarSaldo()">Exibir | Ocultar</button>
+
+    <p *ngIf="mostraSaldo == true; else ocultaSaldo">{{ saldo }}</p>
+    <ng-template #ocultaSaldo>
+        <p>Saldo Oculto</p>
+    </ng-template>
+
+    <br>
+
+    <h2>Diretiva de Repetição <strong>(*ngFor)</strong></h2>
+    <br>
+
+    <h3>Alimentos:</h3>
+    <div *ngFor="let alimento of alimentos, let i = index">
+        <p> {{ i + 1}} - {{ alimento }} </p>
+    </div>
+    
